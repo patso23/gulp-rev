@@ -1,20 +1,15 @@
 {
-  "name": "gulp-rev",
+  "name": "gulp-rev-last",
   "version": "7.0.0",
   "description": "Static asset revisioning by appending content hash to filenames: unicorn.css => unicorn-d41d8cd98f.css",
   "license": "MIT",
-  "repository": "sindresorhus/gulp-rev",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patso23/gulp-rev-last.git"
   },
+  "author": "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
   "maintainers": [
-    {
-      "name": "Justin Hileman",
-      "email": "justin@justinhileman.info",
-      "url": "justinhileman.info"
-    }
+    "Justin Hileman <justin@justinhileman.info> (justinhileman.info)"
   ],
   "engines": {
     "node": ">=0.10.0"
@@ -59,5 +54,10 @@
       "node",
       "mocha"
     ]
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/sindresorhus/gulp-rev/issues"
+  },
+  "homepage": "https://github.com/sindresorhus/gulp-rev#readme",
+  "main": "index.js"
 }
