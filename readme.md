@@ -1,4 +1,4 @@
-# gulp-rev [![Build Status](https://travis-ci.org/sindresorhus/gulp-rev.svg?branch=master)](https://travis-ci.org/sindresorhus/gulp-rev)
+# gulp-rev-last [![Build Status](https://travis-ci.org/sindresorhus/gulp-rev.svg?branch=master)](https://travis-ci.org/sindresorhus/gulp-rev)
 
 > Static asset revisioning by appending content hash to filenames
 > `unicorn.css` → `unicorn-d41d8cd98f.css`
@@ -19,7 +19,7 @@ $ npm install --save-dev gulp-rev
 
 ```js
 var gulp = require('gulp');
-var rev = require('gulp-rev');
+var rev = require('gulp-rev-last');
 
 gulp.task('default', function () {
 	return gulp.src('src/*.css')
@@ -88,7 +88,7 @@ The hash of each rev'd file is stored at `file.revHash`. You can use this for cu
 
 ```js
 var gulp = require('gulp');
-var rev = require('gulp-rev');
+var rev = require('gulp-rev-last');
 
 gulp.task('default', function () {
 	// by default, gulp would pick `assets/css` as the base,
@@ -115,7 +115,7 @@ By default, `rev-manifest.json` will be replaced as a whole. To merge with an ex
 
 ```js
 var gulp = require('gulp');
-var rev = require('gulp-rev');
+var rev = require('gulp-rev-last');
 
 gulp.task('default', function () {
 	// by default, gulp would pick `assets/css` as the base,
@@ -141,7 +141,7 @@ Because of the way `gulp-concat` handles file paths, you may need to set `cwd` a
 
 ```js
 var gulp = require('gulp');
-var rev = require('gulp-rev');
+var rev = require('gulp-rev-last');
 var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
 
@@ -164,7 +164,7 @@ var gulp = require('gulp');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var buffer = require('gulp-buffer');
-var rev = require('gulp-rev');
+var rev = require('gulp-rev-last');
 
 gulp.task('default', function () {
 	return browserify('src/index.js')
@@ -179,7 +179,7 @@ gulp.task('default', function () {
 
 ## Integration
 
-For more info on how to integrate **gulp-rev** into your app, have a look at the [integration guide](integration.md).
+For more info on how to integrate **gulp-rev-last** into your app, have a look at the [integration guide](integration.md).
 
 
 ## Works with gulp-rev
